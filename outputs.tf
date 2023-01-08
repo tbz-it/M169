@@ -22,7 +22,4 @@ output "description" {
 output "README" {
   value = templatefile( "README.md", { ip = module.lerncloud.ip_vm, fqdn = module.lerncloud.fqdn_vm, ADDR = module.lerncloud.ip_vm } )
 } 
-
-output "ACCESSING" {
-  value = templatefile( "ACCESSING.md", { ip = module.lerncloud.ip_vm, fqdn = module.lerncloud.fqdn_vm, ADDR = module.lerncloud.ip_vm } )
-}    
+  
