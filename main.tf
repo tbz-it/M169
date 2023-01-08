@@ -7,6 +7,9 @@ module "lerncloud" {
   
   module     = "m169"
   description = "Modul 169 Services mit Containern bereitstellen"
+  cores   = 2
+  memory  = 4
+  storage = 24   
     
   userdata    = "cloud-init.yaml"
 }
